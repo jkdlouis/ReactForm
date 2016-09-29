@@ -35,9 +35,8 @@ var contactForm = React.createClass({
     this.props.onSubmit({firstName, lastName, email});
   },
 
-  onSubmit: function(event, formData) {
-  event.preventDefault();
-    console.log(formData);
+  onSubmit: function(formData) {
+    event.preventDefault();
     this.props.submit(formData);
   },
 
